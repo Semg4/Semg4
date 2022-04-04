@@ -13,7 +13,8 @@ import DZ  # домашнее задание от первого урока
 
 bot = telebot.TeleBot('5173440304:AAGOO6PhsDxOdKwCfpeOgHwPquwRd90jc3w')  # Создаем экземпляр бота
 game21 = None  # класс игры в 21, экземпляр создаём только при начале игры
-
+game_rcb = None
+game
 # -----------------------------------------------------------------------
 # Функция, обрабатывающая команды
 @bot.message_handler(commands="start")

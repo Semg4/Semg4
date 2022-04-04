@@ -1,6 +1,7 @@
 import requests
 import random
 
+
 #___________________________________________________________________
 class Hand:
     emo_ROCK = "U000270A"  # Unicod эмоджи Камень
@@ -8,7 +9,7 @@ class Hand:
     emo_SCISSORS = "U000270C"  # Unicod эмоджи Ножницы
 #___________________________________________________________________
 
-def game(message):
+def game(bot, message):
     choice = random.choice(['Камень🤜', 'Ножницы✌️', 'Бумага✋'])
     if message.text == choice:
         bot.send_message(message.chat.id, 'Боевая ничья! Для начала новой игры пишите /start')
